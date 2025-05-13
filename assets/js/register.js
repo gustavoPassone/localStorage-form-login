@@ -16,11 +16,7 @@ const cadastroUsuario = () => {
         return;
     }
 
-    if (user.trim() == "") {
-        alert("Digite um usuario")
-    } else if (password != confirmPassword) {
-        alert("Confirmação de senha incorreta")
-    }
+    alert("Confirmação de senha incorreta")
 }
 
 btnRegister.addEventListener("click", cadastroUsuario)
