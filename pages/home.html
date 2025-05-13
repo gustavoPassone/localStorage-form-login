@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Configuração de Perfil</title>
+  <link rel="stylesheet" href="../assets/css/home.css" />
 </head>
 <body>
-    <h1>Home</h1>
-    <button>Logout</button>
+  <h1>Home</h1>
+  <div class="name"></div>
+  <button id="logout">Logout</button>
+    
+  <div class="container">
+    <h1>Configurações do Perfil</h1>
+    <form class="profile-form">
+      <div class="form-group">
+        <label for="profile-pic">Foto de Perfil</label>
+        <input type="file" id="profile-pic" accept="image/*" />
+      </div>
+
+      <div class="form-group">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" placeholder="Digite seu nome" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required />
+      </div>
+
+      <div class="form-group">
+        <label for="bio">Biografia</label>
+        <textarea id="bio" rows="4" placeholder="Fale um pouco sobre você..."></textarea>
+      </div>
+
+      <button type="submit" id="btnSalvar">Salvar</button>
+    </form>
+  </div>
+  <script src="../assets/js/home.js"></script>
 </body>
 </html>
